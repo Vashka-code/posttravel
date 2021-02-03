@@ -1,0 +1,51 @@
+.menuBtn {
+  display: none;
+  width: 34px;
+  height: 34px;
+	position: relative;
+  cursor: pointer;
+  span,
+  span::before,
+  span::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2px;
+    background-color: #fff;
+  }
+  span{
+    width: 100%;
+  }
+  span::before,
+  span::after {
+    content: '';
+    transition: 0.2s;
+  }
+  span::before {
+    width: 100%;
+    transform: translateY(-8px);
+  }
+  span::after {
+    width: 100%;
+    transform: translateY(8px);
+  }
+  &.active span{
+    height: 0;
+  }
+  &.active span:before {
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+  &.active span:after {
+    transform: rotate(45deg);
+    width: 100%;
+  }
+  &_ml{
+    margin-left: 20px;
+  }
+}
+

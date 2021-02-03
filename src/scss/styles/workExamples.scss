@@ -1,0 +1,91 @@
+.workExamples{
+  padding: 58px 0;
+  &__title{
+    text-align: center;
+  }
+  &__container{
+    margin-top: 62px;
+  }
+  &__slide{
+    width: 710px;
+  }
+  &__content{
+    width: 100%;
+    padding: 12px;
+    background: $border-lighter;
+    border-radius: 38px;
+    height: 470px;
+    position: relative;
+  }
+  &__work{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 27px;
+    path{
+      transition: 0.3s;
+    }
+    &:hover{
+      path{
+        fill: rgb(235, 235, 235);
+      }
+      .workExamples__play{
+        box-shadow: 0px 9px 31px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+  &__play{
+    background: linear-gradient(180deg, #58D0EB 0%, #0487FF 100%);
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  &__data{
+    font-weight: 500;
+    font-size: 17px;
+    color: $border-lightex;
+    padding: 14px 18px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    line-height: 1;
+    margin: 4px 0;
+    display: inline-block;
+    max-width: 100%;
+  }
+  &__datas{
+    position: absolute;
+    bottom: 28px;
+    right: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: calc(100% - 60px);
+  }
+  &__about{
+    width: 90%;
+    max-width: 548px;
+    padding: 20px 46px;
+    background: $border-lighter;
+    border-radius: 11px;  
+    margin: 36px auto 0 ;
+    position: relative;
+  }
+  &__aboutQue{
+    font-weight: 500;
+    font-size: 97px;
+    line-height: 1;
+    color: #FFFFFF;
+    position: absolute;
+    left: -10px;
+    top: 0;
+  }
+}

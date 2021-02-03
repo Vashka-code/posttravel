@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: $mainFont;
+  line-height: $mainLineHeight;
+  overflow-x: hidden;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+
+.null{
+  margin: 0;
+  padding: 0;
+}
+
+// wrappers
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: $wrapperWidth;
+}
+
+// texts
+.title{
+  font-weight: 300;
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+// weight
+.bold{
+  font-weight: bold;
+}
+.medium{
+  font-weight: 500;
+}
+.regular{
+  font-weight: normal;
+}
+

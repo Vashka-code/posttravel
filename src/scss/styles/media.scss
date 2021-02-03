@@ -1,0 +1,663 @@
+@media(max-width: $desktopWidth){
+  .header{
+     &__contentMen{
+       max-width: 350px;
+     }
+     &__contentText{
+       max-width: 520px;
+     }
+     &__contentCircle{
+       display: none;
+     }
+     &__title{
+       font-size: 34px;
+     }
+  }
+  .advantagesBlock{
+    &__item{
+      width: 300px;
+      padding: 30px 32px;
+    }
+    &__iconBlock{
+      max-height: 100px;
+    }
+    &__icon{
+      max-height: 90px;
+    }
+  }
+  .title{
+    font-size: 28px;
+  }
+  .contactBlock{
+    &__title{
+      font-size: 23px;
+    }
+  }
+  .footer{
+    padding: 40px 0;
+  }
+  .servicesBlock{
+    overflow: hidden;
+    &__img{
+      display: none;
+    }
+    &__accName, &__accPrice{
+      font-size: 17px;
+    }
+    &__accTop{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &__accBottom{
+      padding-bottom: 20px;
+    }
+    &__tabs{
+      margin-top: 40px;
+    }
+  }
+}
+@media(max-width: $smDesktopWidth){
+  .header{
+    &__contentMen{
+      display: none;
+    }
+    &__contentText{
+      max-width: 100%;
+      padding: 44px 0;
+    }
+    &__contentHeight{
+      min-height: calc(100vh - 120px);
+      align-items: center;
+    }
+    &__clapboard{
+      display: none;
+    }
+    &__title{
+      font-size: 28px;
+    }
+    &__about{
+      font-size: 14px;
+    }
+    &__button{
+      margin-left: auto;
+      display: table;
+      margin-right: auto;
+    }
+    &__infs{
+      display: none;
+    }
+  }
+  .headerPopup{
+    display: flex;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    &.active{
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+  .menuBtn{
+    display: block;
+  }
+  .logo{
+    margin-left: auto;
+    &__text{
+      font-size: 16px;
+    }
+  }
+  .advantagesBlock{
+    &__item{
+      width: 100%;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 6px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+    &__iconBlock{
+      max-width: 80px;
+      height: auto;
+    }
+    &__icon{
+      max-width: 100%;
+      height: auto;
+    }
+    &__content{
+      width: 82%;
+      text-align: left;
+    }
+    &__title{
+      margin-top: 0;
+    }
+    &__text{
+      margin-top: 10px;
+    }
+  }
+  .title{
+    font-size: 24px;
+  }
+  .equipmentBlock{
+    &__container{
+      margin-top: 30px;
+    }
+    &__slide{
+      width: 740px;
+      padding: 26px 30px;
+    }
+    &__content{
+      width: 100%;
+    }
+    &__about{
+      margin-top: 15px;
+    }
+    &__imgBlock{
+      margin: 25px auto 0;
+      max-width: 100%;
+    }
+    &__img{
+      max-width: 350px;
+      height: auto;
+      width: auto;
+      display: block;
+      max-height: 255px;
+    }
+    &__name{
+      font-size: 20px;
+    }
+    &__about{
+      font-size: 15px;
+    }
+  }
+  .workExamples{
+    padding: 50px 0;
+    &__container{
+      margin-top: 60px;
+    }
+    &__slide{
+      width: 600px;
+    }
+    &__content{
+      height: 400px;
+    }
+    &__data{
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 3px;
+      margin: 2px 0;
+    }
+  }
+  .servicesBlock{
+    padding: 40px 0;
+    &__light, &__circle, &__img{
+      display: none;
+    }
+    &__tabs{
+      margin-top: 40px;
+      justify-content: space-around;
+    }
+    &__tabButton{
+      background: transparent;
+      border: 1px solid $border-light-second;
+      width: 100%;
+    }
+    &__tab{
+      width: 168px;
+      background: transparent;
+      &.active{
+        .servicesBlock__tabButton{
+          background: $neutral-primary-third;
+          border: 1px solid $neutral-primary-third;
+        }
+      }
+    }
+    &__tabContents{
+      position: relative;
+    }
+    &__tabContent{
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      opacity: 0;
+      transition: 0.3s;
+      &:last-child{
+        right: 0;
+        transform-origin: right center;
+      }
+      &:first-child{
+        left: 0;
+        transform-origin: left center;
+      }
+      &.active{
+        transform: scaleX(1);
+        opacity: 1;
+        position: relative;
+      }
+    }
+    &__accName, &__accPrice{
+      font-size: 16px;
+    }
+    &__accItem{
+      font-size: 12px;
+    }
+  }
+  .contactBlock{
+    padding: 50px 0 60px;
+    &__title{
+      font-size: 20px;
+    }
+    &__about{
+      font-size: 11px;
+    }
+  }
+  .footer{
+    font-size: 10px;
+  }
+}
+@media(max-width: $tableWidth){
+  .header{
+    &__title{
+      font-size: 22px;
+    }
+    &__type{
+      font-size: 12px;
+    }
+    &__about{
+      font-size: 13px;
+    }
+    &__menu{
+      padding: 25px 0;
+    }
+    &__contentHeight{
+      min-height: calc(100vh - 95px);
+      align-items: center;
+    }
+  }
+  .headerPopup{
+    &__link{
+      font-size: 16px;
+    }
+    &__bottomText{
+      font-size: 14px;
+    }
+  }
+  .button{
+    font-size: 12px;
+    padding: 16px 34px;
+    min-width: 180px;
+  }
+  .logo{
+    &__text{
+      font-size: 14px;
+      width: 230px;
+    }
+    &__icon{
+      display: block;
+      width: 75px;
+      height: auto;
+    }
+  }
+  .menuBtn{
+    width: 26px;
+    height: 26px;
+  }
+  .phone{
+    &__number{
+      font-size: 16px;
+    }
+    &__time{
+      font-size: 10px;
+    }
+  }
+  .sochials{
+    &__item{
+      width: 30px;
+      height: 30px;
+    }
+    &__icon{
+      max-width: 15px;
+      height: auto;
+    }
+  }
+  .advantagesBlock{
+    padding: 40px 0;
+    &__iconBlock{
+      max-width: 50px;
+    }
+    &__content{
+      width: calc(100% - 80px);
+    }
+    &__title{
+      font-size: 14px;
+    }
+    &__text{
+      font-size: 12px;
+    }
+  }
+  .title{
+    font-size: 20px;
+  }
+  .equipmentBlock{
+    &__slide{
+      width: 420px;
+      padding: 26px 30px;
+      border: 6px solid $border-base;
+    }
+    &__imgBlock{
+      margin: 25px auto 0;
+    }
+    &__img{
+      max-width: 350px;
+      max-height: 235px;
+    }
+    &__name{
+      font-size: 16px;
+    }
+    &__about{
+      font-size: 13px;
+      margin-top: 8px;
+    }
+  }
+  .workExamples{
+    padding: 30px 0;
+    &__container{
+      margin-top: 40px;
+    }
+    &__slide{
+      width: 420px;
+    }
+    &__content{
+      height: 300px;
+    }
+    &__data{
+      font-size: 12px;
+      padding: 4px 10px;
+    }
+    &__about{
+      font-size: 12px;
+    }
+    &__play{
+      width: 66px;
+      height: 66px;
+    }
+    &__about{
+      margin-top: 15px;
+    }
+  }
+  .servicesBlock{
+    padding: 30px 0;
+    &__tabs{
+      margin-top: 30px;
+    }
+    &__tabButton{
+      font-size: 14px;
+    }
+    &__accName, &__accPrice{
+      font-size: 14px;
+    }
+    &__accTop{
+      padding: 17px;
+    }
+    &__accBottom{
+      padding: 0 17px 17px;
+    }
+    &__accArrow{
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      margin-left: 15px;
+    }
+    &__accIcon{
+      display: block;
+      max-width: 10px;
+      height: auto;
+    }
+    &__accItem{
+      font-size: 10px;
+    }
+  }
+  .contactBlock{
+    padding: 30px 0 40px;
+    &__title{
+      font-size: 16px;
+    }
+    &__form{
+      margin-top: 10px;
+    }
+    &__inputBlock{
+      margin-top: 15px;
+    }
+    &__about{
+      font-size: 9px;
+      width: 102px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__socBlock{
+      flex-direction: column;
+    }
+    &__sochials{
+      margin-left: 0;
+      margin-top: 5px;
+    }
+    &__itemBlock{
+      margin-left: 6px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+  .inputBlock{
+    width: 100%;
+    &__text{
+      font-size: 13px;
+    }
+    &__input{
+      margin-top: 5px;
+    }
+  }
+  .input{
+    font-size: 10px;
+  }
+  .footer{
+    padding: 30px 0;
+  }
+}
+@media(max-width: $phoneWidth){
+  .header{
+    &__title{
+      font-size: 18px;
+    }
+    &__type{
+      font-size: 10px;
+    }
+    &__about{
+      font-size: 12px;
+    }
+    &__menu{
+      padding: 20px 0;
+    }
+    &__contentText{
+      padding: 30px 0 40px;
+    }
+    &__contentHeight{
+      min-height: calc(100vh - 73px);
+    }
+  }
+  .headerPopup{
+    &__link{
+      font-size: 14px;
+    }
+    &__bottomText{
+      font-size: 12px;
+    }
+  }
+  .button{
+    font-size: 10px;
+    padding: 12px 22px;
+    min-width: 135px;
+  }
+  .logo{
+    &__text{
+      font-size: 10px;
+      margin-left: 16px;
+      width: 160px;
+    }
+    &__icon{
+      width: 55px;
+    }
+  }
+  .menuBtn{
+    width: 20px;
+    height: 20px;
+    span::before {
+      width: 100%;
+      transform: translateY(-5px);
+    }
+    span::after {
+      width: 100%;
+      transform: translateY(5px);
+    }
+  }
+  .advantagesBlock{
+    padding: 20px 0;
+    &__iconBlock{
+      max-width: 40px;
+    }
+    &__content{
+      width: calc(100% - 60px);
+    }
+    &__title{
+      font-size: 12px;
+    }
+    &__text{
+      font-size: 10px;
+    }
+  }
+  .title{
+    font-size: 16px;
+  }
+  .equipmentBlock{
+    padding: 20px 0;
+    &__container{
+      margin-top: 20px;
+    }
+    &__slide{
+      width: 280px;
+      padding: 22px 24px;
+    }
+    &__imgBlock{
+      margin: 15px auto 0;
+    }
+    &__name{
+      font-size: 14px;
+    }
+    &__about{
+      font-size: 11px;
+    }
+    &__img{
+      max-width: 100%;
+      max-height: 155px;
+    }
+  }
+  .swiper-controls{
+    margin-top: 0;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+  .swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+  }
+  .swiper-pagination-bullet-active{
+    width: 8px;
+    height: 8px;
+  }
+  .workExamples{
+    padding: 10px 0;
+    &__container{
+      margin-top: 20px;
+    }
+    &__slide{
+      width: 220px;
+    }
+    &__work{
+      border-radius: 13px;
+    }
+    &__content{
+      height: 150px;
+      padding: 0;
+      border-radius: 13px;
+    }
+    &__data{
+      font-size: 8px;
+      padding: 2px 6px;
+    }
+    &__datas{
+      right: 10px;
+      bottom: 10px;
+    }
+    &__play{
+      width: 40px;
+      height: 40px;
+    }
+    &__playIcon{
+      display: block;
+      max-width: 9px;
+      height: auto;
+    }
+    &__about{
+      margin-top: 10px;
+      padding: 0px;
+      background: transparent;
+      font-size: 8px;
+    }
+    &__aboutQue{
+      display: none;
+    }
+  }
+  .servicesBlock{
+    padding: 26px 0;
+    &__tabs{
+      margin-top: 20px;
+    }
+    &__tab{
+      width: 120px;
+    }
+    &__tabButton{
+      padding: 12px 0;
+    }
+    &__tabButton{
+      font-size: 10px;
+    }
+    &__accName, &__accPrice{
+      font-size: 10px;
+    }
+    &__accItem{
+      font-size: 8px;
+    }
+  }
+  .contactBlock{
+    padding: 20px 0 30px;
+    &__title{
+      font-size: 14px;
+    }
+    &__about{
+      font-size: 7px;
+      width: 82px;
+    }
+    &__funcs{
+      margin-top: 15px;
+    }
+  }
+  .footer{
+    padding: 20px 0;
+    font-size: 8px;
+  }
+}

@@ -1,0 +1,23 @@
+.input{
+  width: 100%;
+  background: $border-lighter;
+  border-radius: 8px;
+  padding: 16px 20px;
+  outline: none;
+  border: 1px solid $border-lighter;
+  transition: 0.3s;
+  font-size: 13px;
+  &.error{
+    border: 1px solid $danger-color;
+  }
+  &_textarea{
+    resize: none;
+    height: 170px;
+  }
+  &:hover{
+    border: 1px solid $neutral-secondary; 
+  }
+  &:focus{
+    border: 1px solid $neutral-secondary; 
+  }
+}

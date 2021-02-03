@@ -1,0 +1,29 @@
+.phone{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  &__icon{
+    display: block;
+    margin-top: 7px;
+  }
+  &__content{
+    margin-left: 15px;
+  }
+  &__number{
+    display: block;
+    font-weight: 800;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: $secondFont;
+    transition: 0.3s;
+    &:hover{
+      color: #e7e7e7;
+    }
+  }
+  &__time{
+    display: block;
+    font-size: 12px;
+    font-family: $secondFont;
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'utils/mixins';
+@import 'utils/vars';
+@import 'utils/libs';
+@import 'utils/fonts';
+
+// styles
+@import 'styles/common';
+@import 'styles/logo';
+@import 'styles/phone';
+@import 'styles/button';
+@import 'styles/swiper';
+@import 'styles/inputBlock';
+@import 'styles/input';
+@import 'styles/sochials';
+@import 'styles/thanksPopup';
+@import 'styles/headerPopup';
+@import 'styles/menuBtn';
+
+
+// blocks
+@import 'styles/header';
+@import 'styles/footer';
+@import 'styles/advantagesBlock';
+@import 'styles/equipmentBlock';
+@import 'styles/workExamples';
+@import 'styles/servicesBlock';
+@import 'styles/contactBlock';
+
+// media
+@import 'styles/media';

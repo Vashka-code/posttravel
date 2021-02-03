@@ -1,0 +1,45 @@
+.equipmentBlock{
+  padding: 32px 0;
+  &__wrapper{
+    text-align: center;
+  }
+  &__slide{
+    padding: 22px 85px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 9px solid $border-base;
+    width: 980px;
+    height: auto;
+  }
+  &__about{
+    margin-top: 30px;
+  }
+  &__content{
+    width: 512px;
+    text-align: left;
+  }
+  &__name{
+    font-weight: 500;
+    font-size: 22px;
+    color: $neutral-placeholder;
+  }
+  &__about{
+    font-size: 15px;
+    line-height: 1.7;
+    color: $border-light;
+  }
+  &__imgBlock{
+    max-width: 250px;
+  }
+  &__img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 335px;
+  }
+  &__container{
+    margin-top: 50px;
+  }
+}

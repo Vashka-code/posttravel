@@ -1,0 +1,60 @@
+/* Vars:
+   ========================================================================== */
+
+// Font
+$mainFont : 'TT Norms', sans-serif;
+$secondFont : 'Montserrat', sans-serif;
+
+
+// Size
+$mainFontColor           : #101010;
+$mainFontSize            : 18px;
+$mainFontWeight          : 400;
+$mainLineHeight : 1.6;
+
+$desktopWidth : 1380px;
+$smDesktopWidth : 1024px;
+$tableWidth : 768px;
+$smTableWidth            : 640px;
+$phoneWidth : 480px;
+$smPhoneWidth            : 320px;
+
+
+// wrappers
+$wrapperWidth: 1180px;
+
+/*
+ All colors taken from:
+ https://github.com/vedees/uimini
+*/
+
+// Main color
+$default-color           : #ffffff;
+$primary-color : #49BEFF;
+$primary-color-hover : #45b2ec;
+$success-color : #5CDA3D;
+$success-color-hover : #55c738;
+$danger-color : #FF0000;
+$danger-color-second : #FF3E3E;
+$danger-color-gradient : linear-gradient(98.37deg, #FF0000 4.49%, #9E00FF 92.21%), #252525;;
+$warning-color           : #fed330;
+$light-color : #6D6D6D;
+$purple-color            : #8854d0;
+
+// Neutral Color
+$neutral-primary : #151515;
+$neutral-primary-second: #232323;
+$neutral-primary-third: #171717;
+$neutral-regular : #111111;
+$neutral-regular-second : #2C2C2C;
+$neutral-regular-third : #292929;
+$neutral-secondary : #7E868E;
+$neutral-secondary-second : #9A9A9A;
+$neutral-placeholder : #2E363E;
+
+// Border Color
+$border-base : #F3F3F3;
+$border-light : #7B7B7B;
+$border-light-second : #3D3D3D;
+$border-lighter : #F5F5F5;
+$border-lightex : #616161;

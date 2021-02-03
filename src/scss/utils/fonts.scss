@@ -1,0 +1,16 @@
+/* Fonts:
+   https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+   ========================================================================== */
+
+@import "mixins";
+
+// TT Norms
+@include font-face("TT Norms", "../fonts/ttNorms/light/TTNorms-Light", 300);
+@include font-face("TT Norms", "../fonts/ttNorms/regular/TTNorms-Regular", 400);
+@include font-face("TT Norms", "../fonts/ttNorms/medium/TTNorms-Medium", 500);
+@include font-face("TT Norms", "../fonts/ttNorms/bold/TTNorms-Bold", 700);
+
+// Montserrat
+@include font-face("Montserrat", "../fonts/montserrat/regular/Montserrat-Regular", 400);
+@include font-face("Montserrat", "../fonts/montserrat/medium/Montserrat-Medium", 500);
+@include font-face("Montserrat", "../fonts/montserrat/extraBold/Montserrat-ExtraBold", 800);

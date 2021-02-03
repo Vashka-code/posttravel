@@ -1,0 +1,19 @@
+.thanksPopup{
+  max-width: 400px;
+  width: 90%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  display: none;
+  &__title{
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+  }
+  &__text{
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+  }
+}

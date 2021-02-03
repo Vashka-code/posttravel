@@ -1,0 +1,17 @@
+.logo{
+  display: flex;
+  align-items: center;
+  &__text{
+    display: block;
+    width: 342px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 24px;
+  }
+  &__icon{
+    display: block;
+    max-width: 90px;
+    height: auto;
+  }
+}

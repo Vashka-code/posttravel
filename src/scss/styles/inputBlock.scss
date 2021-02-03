@@ -1,0 +1,15 @@
+.inputBlock{
+  width: 260px;
+  &_full{
+    width: 100%;
+  }
+  &__text{
+    font-family: $secondFont;
+    font-weight: 500;
+    font-size: 14px;
+    color: $neutral-placeholder;
+  }
+  &__input{
+    margin-top: 10px;
+  }
+}
